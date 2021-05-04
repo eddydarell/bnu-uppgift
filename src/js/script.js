@@ -117,7 +117,7 @@ const sortItems = (channels, sortField = 'pubDate', limit = 10) => {
         else return 0;
     });
 
-    let uniqueItems = [...new Map(allItems.map(item => [item['guid'], item])).values()]
+    let uniqueItems = [...new Map(allItems.map(item => [item['guid'], item])).values()]; // Remove duplicates
 
     return uniqueItems.slice(0, limit);
 }
@@ -209,9 +209,9 @@ const fetchFeeds =  (urls, proxy = '') => {
 }
 
 
-const CORS_PROXY = "https://cors-anywhere.herokuapp.com/" 
-const feedsURL = 'assets/feeds.json';
-const localFeedsURL = 'assets/localFeeds.json';
+const CORS_PROXY = ''; //"https://cors-anywhere.herokuapp.com/" // Use this proxy server to come around CORS policy problem
+const FEEDS_URL = 'assets/feeds.json';
+const LOCAL_FEEDS_URL = 'assets/localFeeds.json';
 let feedsArray = [];
 let latestFeeds = [];
 let lFeeds = document.querySelector('button.local');
@@ -220,7 +220,7 @@ let tView = document.querySelector('button.toggle');
 
 lFeeds.addEventListener('click', function(e) {
     e.preventDefault();
-    fetchWrapper(localFeedsURL, 'json')
+    fetchWrapper(LOCAL_FEEDS_URL, 'json')
     .then(json => {
         fetchFeeds(json.feeds);
     });
@@ -228,7 +228,7 @@ lFeeds.addEventListener('click', function(e) {
 
 iFeeds.addEventListener('click', function(e){
     e.preventDefault();
-    fetchWrapper(feedsURL, 'json')
+    fetchWrapper(FEEDS_URL, 'json')
     .then(json => {
         fetchFeeds(json.feeds, CORS_PROXY);
     });
