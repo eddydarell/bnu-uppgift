@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Wrapps the fetch API to return text or JSON responses
+ * Wraps the fetch API to return text or JSON responses
  * @param {string} url 
  * @param {string} responseType 
  * @returns 
@@ -48,7 +48,6 @@ const extratNodeValues = (node, property) => {
  * @param {array} aggregatedArray 
  */
 const aggregateRSS = (xmlDoc, aggregatedArray) => {
-    console.log(xmlDoc);
     let channel = xmlDoc.getElementsByTagName('channel')[0];
     let channelTitle = extratNodeValues(channel, 'title');
     let channelLink = extratNodeValues(channel, 'link');
@@ -162,7 +161,6 @@ const renderFeedCards = feeds => {
  * @returns 
  */
 const buildFeedCard = feed => {
-    console.log(feed);
     let card = document.createElement('div');
     let cardHTML = `
         <div class="card">
@@ -201,7 +199,6 @@ const fetchFeeds =  (urls, proxy = '') => {
             if(counter == urls.length - 1){
                 latestFeeds = sortItems(feedsArray);
                 renderFeeds(latestFeeds);
-                console.log(latestFeeds);
             } else counter ++;
         })
         .catch(e => console.log(e))
@@ -236,7 +233,5 @@ iFeeds.addEventListener('click', function(e){
 
 tView.addEventListener('click', function(e){
     e.preventDefault();
-    console.log(latestFeeds);
-
     renderFeedCards(latestFeeds);
 });
