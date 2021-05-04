@@ -1,0 +1,100 @@
+:root{
+    --shadow: 5px 16px 20px 3px #88888854;
+    --padding: 20px;
+}
+body{
+    display: block;
+    position: relative;
+    color: #555;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: block;
+    position: relative;
+    background-color: #fdfdfd;
+    width: 60vw;
+    margin: 50px 20vw 0 20vw;
+    box-sizing: content-box;
+    box-shadow: var(--shadow);
+    padding: var(--padding);
+    border-radius: 10px;
+}
+
+div{
+    border-radius: 5px;
+}
+
+div#latest-feeds{
+    padding: var(--padding);
+}
+
+div#latest-feeds.grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 300px));
+    gap: var(--padding);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+div.card{
+    position: relative;
+    box-shadow: var(--shadow);
+    padding: 0;
+    transition: all .3s ease;
+}
+
+div.card:hover{
+    transform: scale(1.05);
+}
+
+div.card a{
+    color: #333;
+    text-decoration: none;
+}
+
+div.card a:hover{
+    color: #000;
+}
+
+div.card > img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+div.card > div.channel-banner{
+    font-size: 0.8em;
+    background-color: #bfbfbf;
+    padding: 3px var(--padding);
+    margin-top: -3px;
+    border-radius: 0;
+}
+
+div.card > div.content{
+    padding: var(--padding);
+}
+
+div.card .header small{
+    display: block;
+}
+
+div.card .header small:first-child{
+    font-size: .6em;
+    color: #888;
+}
+
+div.card .header small:last-child{
+    font-size: .7em;
+    color: #999;
+}
+div.card .description img{
+    width: 100%;
+}
+
+div.card h1{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 0;
+}

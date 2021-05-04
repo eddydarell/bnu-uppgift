@@ -1,0 +1,15 @@
+{
+  "name": "developer-assessment",
+  "version": "1.0.0",
+  "description": "RSS feed reader",
+  "main": "script.js",
+  "scripts": {
+    "dev": "http-server ./ -p 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eddy Ntambwe <eddydarell@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RSS Reader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+            <div class="header">
+                <h1>RSS reader</h1>
+                <hr>
+                <p>Select a feed :</p>
+                <table>
+                    <tr>
+                        <td><button class="local">Local Feeds</button></td>
+                        <td><button class="internet">Internet Feeds</button></td>
+                        <td><button class="toggle">Toggle View</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="latest-feeds">
+
+            </div>
+        </main>
+        <script src="/node_modules/rss-parser/dist/rss-parser.min.js"></script>
+        <script src="src/js/script.js"></script>
+    </body>
+</html>

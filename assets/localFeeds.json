@@ -1,0 +1,15 @@
+{
+    "feeds": [
+        "assets/rss/dn_debatt.xml",
+        "assets/rss/dn_kultur.xml",
+        "assets/rss/dn_sport.xml",
+        "assets/rss/dn_nyheter.xml",
+        "assets/rss/expressen_kultur.xml",
+        "assets/rss/expressen_ledare.xml",
+        "assets/rss/expressen_motor.xml",
+        "assets/rss/expressen_noje.xml",
+        "assets/rss/expressen_nyheter.xml",
+        "assets/rss/hd_nyheter.xml",
+        "assets/rss/sydsvenskan_nyheter.xml"
+    ]
+  }
