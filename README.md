@@ -25,7 +25,7 @@ Detta startar en web server på localhost:8081 (can configureras i package.json)
 - Använda klasser
 - Felhantering, bättre felhantering och data säkring
 - Flera funktioner (gruppering, filtrering, sortering i olika fält ordning som A-Z, optimering för snabbhet och resurs snållhet, etc). I koden finns redan några "extra" funktioner implementerade.
-- GUI, bättre design och fler information (Har redan gjort något sådant av personliga skäll)
+- GUI, bättre design och fler information (Har redan gjort något sådant av personliga själ)
 
 #### Utmaningar
 
