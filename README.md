@@ -18,7 +18,7 @@ Detta startar en web server på localhost:8081 (can configureras i package.json)
 #### Lösningen
 
 1. Uppfigtens lösning är en webb app skiven i vanilla JavaScript (ES6), vilket innebär att den borde fungera i dom flesta moderna weblässare.
-2. Har lagt ca 3 timmar på uppgiftensutveckling men har spenderat extra tid med CORS policy hindret som ställde till RSS hämntning. Och lite extra på UI av personliga skäll (Tyckte att det var en rolig uppgift)
+2. Har lagt ca 3 timmar på uppgiftensutveckling men har spenderat extra tid med CORS policy hindret som ställde till RSS hämntning. Och lite extra på UI av personliga själ (Tyckte att det var en rolig uppgift)
 3. Applikationen är inte optimerad för att klara mycket hög last men i sådana fall lösningen jag har tänkt på är väl att använda en cahe för att spara redan nedladdade flöden.
 4. Om jag hade mer tid då skulle jag utveckla vidare på sättet nedan: 
 - Projektsstruktur, bättre fil hantering och kod separation
