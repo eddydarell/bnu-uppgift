@@ -4,4 +4,8 @@ node_modules/
 npm-debug.log
 package-lock.json
 test/*.log
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> 5d2dbc64d8cd376be4d9c140e5ce78f37b4a453a
